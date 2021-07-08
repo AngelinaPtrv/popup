@@ -1,0 +1,143 @@
+.text__button {
+  font-family: 'Lab-Grotesque-Medium', sans-serif;
+  size: 14px;
+  color: #ea0029;
+}
+
+.text__button:hover {
+  cursor: pointer;
+  color: #f53a31;
+}
+
+.checkbox {
+  width: 17px;
+  height: 17px;
+  -webkit-appearance: none;
+  border: 1px solid #dfe3e6;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 14px 0 0;
+}
+
+.checkbox:hover {
+  border: 1px solid #000;
+}
+
+.checkbox:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkbox:checked + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 31px;
+  cursor: pointer;
+}
+
+.checkbox:checked + label:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 19px;
+  height: 19px;
+  background: linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #ff5e56;
+  border-radius: 6px;
+  margin: 0 14px 0 0;
+}
+
+.checkbox:checked + label:after{
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 13px;
+  height: 7px;
+  border-radius: 1px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.button-red {
+  background: linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #ff5e56;
+  box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+  border-radius: 6px;
+  border: 1px solid #FF5E56;
+  color: #fff;
+  font-family: 'Lab-Grotesque-Medium', sans-serif;
+  font-size: 16px;
+  padding: 16px 0;
+}
+
+.button-red:hover {
+  cursor: pointer;
+  background: #ea0029;
+}
+
+.button-clear {
+  background: transparent;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Lab-Grotesque-Medium', sans-serif;
+  font-size: 16px;
+}
+
+.button-clear:hover {
+  background: #fff;
+  cursor: pointer;
+  color: #000;
+}
+
+.tags-active {
+  background: linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #ff5e56;
+  border: 1px solid #FF5E56;
+  border-radius: 50px;
+  padding: 6px 12px;
+  color: #fff;
+  font-family: 'Lab Grotesque-Light', sans-serif;
+  font-size: 14px;
+  margin-left: 32px;
+  margin-right: 16px;
+  height: 36px;
+}
+
+.tags-notactive {
+  background: #EEF0F2;
+  border: 1px solid #EEF0F2;
+  border-radius: 50px;
+  padding: 6px 12px;
+  color: #000;
+  font-family: 'Lab Grotesque-Light', sans-serif;
+  font-size: 14px;
+  height: 36px;
+}
+
+.tags-active:hover,
+.tags-notactive:hover {
+  cursor: pointer;
+}
+
+.tags-notactive:hover {
+  background: #DFE3E6;
+}
+
+input[type="text"] {
+  border: 1px solid #dfe3e6;
+  border-radius: 3px;
+  padding: 8px 0 8px 10px;
+  margin: 8px 0;
+  font-family: 'Lab Grotesque-Light', sans-serif;
+  font-size: 14px;
+}
+
+input[type="text"]:focus-visible {
+  outline-color: #dfe3e6;
+  outline-width: 1px;
+}
+
+input[type="text"]:hover {
+  border: 1px solid #000;
+}

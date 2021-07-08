@@ -1,24 +1,9 @@
-# popup
+Popup
 
-## Project setup
-```
-npm install
-```
+Сверстать адаптивный попап;
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Открытие по кнопке, закрытие по крестику
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Расчет чекбоксов исходя из введенных данных
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+(Для примера использовалась максимальная сумма вычета 260000)

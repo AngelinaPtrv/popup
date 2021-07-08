@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="start">
+    <start-page
+        :toVisible='toVisible'
+        v-if="!popupVisible"
+    ></start-page>
+    <popup
+        :toVisible="toVisible"
+        v-if="popupVisible"></popup>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Popup from "@/components/Popup";
+import StartPage from "@/components/StartPage";
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    Popup,
+    StartPage
+  },
+
+  data() {
+    return {
+      popupVisible: false
+    }
+  },
+
+  methods: {
+    toVisible() {
+      this.popupVisible = !this.popupVisible;
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "~@/assets/css/reset.css";
+@import "~@/assets/css/styles.css";
+@import "~@/assets/fonts/fonts.css";
 </style>
